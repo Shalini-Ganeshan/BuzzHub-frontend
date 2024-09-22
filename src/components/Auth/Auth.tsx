@@ -41,9 +41,9 @@ const Auth: React.FC<AuthProps> = ({ session, reloadSession }) => {
 
       toast.success("Username successfully created");
       reloadSession();
-    } catch (error) {
+    } catch (error:any) {
       toast.error("There was an error");
-      console.log("onSubmit error", error.message || error);
+      console.log("onSubmit error");
     }
   };
 
